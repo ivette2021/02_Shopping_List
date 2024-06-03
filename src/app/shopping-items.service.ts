@@ -30,7 +30,7 @@ export class ShoppingItemsService {
     this.items = [];
     this.isEmpty = true;
   }
-  existsitem(item: string) {
+  exitsItem(item: string) {
     const itemFound = this.items.find(
       (it) => it.toUpperCase().trim() === item.toUpperCase().trim()
     );

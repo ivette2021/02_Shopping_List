@@ -4,4 +4,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true"> </ion-content>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input
+      label="Item"
+      type="text"
+      [(ngModel)]="item"
+      name="item"
+    ></ion-input>
+    <ion-button [disabled]=" !item" (click)="addItem()">
+      <!-- si esta vacio esta desabilitado el btn -->
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-content>
